@@ -1,0 +1,29 @@
+commands 
+
+101
+kubectl run nginx-pod --image nginx:latest
+
+kubectl delete pod nginx-pod --now
+
+102
+kubectl create -f nginx-pod.yaml
+
+104
+kubectl get pods -o yaml
+kubectl get pods -o json
+
+kubectl get pods nginx-pod -o yaml
+kubectl get pods nginx-pod -o json
+
+105
+kubectl get pods -o wide
+
+kubectl port-forward pod/nginx-pod 8080:80
+
+106
+kubectl exec -ti pods nginx-pod -- bash
+
+109
+kubectl run nginx-pod --image nginx --label "tier=frontend"
+
+

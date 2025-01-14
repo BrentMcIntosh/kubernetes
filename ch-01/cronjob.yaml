@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: hello-world-cronjob
+spec:
+  schedule:
+  ttlSecondsAfterFinished: 30
+  template:
+    template:
+      metadata:
+        name: hello-world-job
+      spec:
+        restartPolicy: OnFailure
+        
+        containers:
+        - name: hello-world-container
+          image: busybox
+          command: ["/bin/sh", "c"]
+          args: ["echo 'Hello world'"]
+
