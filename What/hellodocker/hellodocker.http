@@ -1,0 +1,6 @@
+@hellodocker_HostAddress = http://localhost:5048
+
+GET {{hellodocker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,12 @@
+C:\TestApps\What\hellodocker\bin\Release\net8.0\publish\hellodocker.exe
+C:\TestApps\What\hellodocker\bin\Release\net8.0\publish\appsettings.Development.json
+C:\TestApps\What\hellodocker\bin\Release\net8.0\publish\appsettings.json
+C:\TestApps\What\hellodocker\bin\Release\net8.0\publish\hellodocker.dll
+C:\TestApps\What\hellodocker\bin\Release\net8.0\publish\hellodocker.deps.json
+C:\TestApps\What\hellodocker\bin\Release\net8.0\publish\hellodocker.runtimeconfig.json
+C:\TestApps\What\hellodocker\bin\Release\net8.0\publish\hellodocker.pdb
+C:\TestApps\What\hellodocker\bin\Release\net8.0\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\TestApps\What\hellodocker\bin\Release\net8.0\publish\Microsoft.OpenApi.dll
+C:\TestApps\What\hellodocker\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\TestApps\What\hellodocker\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\TestApps\What\hellodocker\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
