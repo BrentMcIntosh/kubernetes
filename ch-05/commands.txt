@@ -1,0 +1,70 @@
+kubectl create -f multi-container-pod.yaml 
+
+
+
+AWS EKS run this in console first
+aws eks update-kubeconfig --region us-east-2 --name thoughtful-folk-potato
+
+
+
+kubectl apply -f eks-sample-deployment.yaml
+
+
+kubectl apply -f eks-sample-service.yaml
+
+
+kubectl get all -n eks-sample-app
+
+kubectl -n eks-sample-app describe service eks-sample-linux-service
+
+kubectl exec -it eks-sample-linux-deployment-6bdd4dfcdf-2tpgz -n eks-sample-app -- /bin/bash
+
+curl eks-sample-linux-service
+
+cat /etc/resolv.conf
+
+exit 0
+
+kubectl delete namespace eks-sample-app
+
+To check the operating system running in an AWS EKS CloudShell, 
+
+you can run a Linux universal command 
+
+cat /etc/*se 
+
+for all OS. The prefix of the filename to each line will give you the OS information. 
+
+
+Alternatively, you can check the version of the AWS CLI using aws --version | cut -d / -f2 | cut -d ' ' -f112.
+
+
+kubectl describe pods/one-nginx-pod
+
+kubectl get pods/one-nginx-pod -o jsonpath="{.items[*].spec.containers[*].name}"
+
+
+kubectl exec -ti one-nginx-pod --container nginx-pod -- /bin/bash
+
+kubectl exec pods/one-nginx-pod --container nginx-container -- ls
+
+kubectl logs -f pods/one-nginx-pod -c nginx-container
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
